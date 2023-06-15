@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000;
+  color: white;
+  
+}
+
+:root {
+  --index : calc(1vw + 1vh);
+  --transition : 1.5s cubic-bezier(.08,.49,.01,1);
+  --logo-size : calc(var(--index)* 7.8);
+  --text-color :rgb(214, 185, 19);
+  --text-shadow : 2px 2px 10px rgba(212,210,38,0.91);
+}
+

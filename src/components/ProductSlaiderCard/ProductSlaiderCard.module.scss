@@ -1,0 +1,43 @@
+.wrap {
+  @apply relative ;
+
+  .image {
+    background-image: url('../../images/featuredProducts/1.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 450px;
+    transition: all 500ms ease;
+    cursor: pointer;
+
+    &:hover {
+      background-image: url('../../images/featuredProducts/2.webp');
+
+    }
+  }
+
+  .info {
+    @apply absolute bottom-0 left-4 ;
+
+    .title {
+      font-size: calc(var(--index)* 0.6);
+      color: var(--text-color);
+    }
+
+    .body {
+      @apply flex items-center gap-3 ;
+
+      .oldPrice {
+        font-size: calc(var(--index)* 0.6);
+        color: var(--text-color);
+        text-decoration:line-through;
+      }
+
+      .price {
+        font-size: calc(var(--index)* 0.6);
+        color: var(--text-color);
+      }
+    }
+  }
+}

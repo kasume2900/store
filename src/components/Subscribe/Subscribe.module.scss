@@ -1,0 +1,29 @@
+
+.wrap {
+  @apply px-8 py-8 flex items-center justify-center gap-10 ;
+  background-color: #4024a7;
+
+  .icon {
+
+  }
+
+  .desc {
+
+  }
+
+  .form {
+    
+    input {
+      @apply px-4 rounded-l-md h-10 ;
+      outline: none;
+      color: #1b1a1a
+    }
+
+    button {
+      @apply  px-4 rounded-r-md ;
+      background-color: #1b1a1a;
+      text-transform: uppercase;
+      height: 42px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.productsSlider {
+  @apply px-8 py-12 ;
+  background-color: #cfcbcb;
+  color: black;
+
+  .typeProducts {
+    @apply flex justify-around items-center ;
+    margin-bottom: 5%;
+    .type {
+      @apply capitalize ;
+      font-size: calc(var(--index) * 0.9);
+      font-weight: 600;
+    }
+    .typeDescr {
+      font-size: calc(var(--index) * 0.7);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+
+.wrap {
+  @apply px-8 py-8 ;
+  background-color: #161616;
+
+  .row {
+    @apply flex items-center justify-around gap-10 ;
+
+    .col {
+
+      .title {
+        @apply mb-2 ;
+        font-size: calc(var(--index)* 0.7);
+        // color: ;
+      }
+    }
+  }
+}
+
+
+.footer {
+  @apply py-8 flex items-center justify-between ;
+
+  .body {
+    @apply flex items-center gap-10 ;
+
+    .logo {
+      text-transform: uppercase;
+      font-size: calc(var(--index)* 1.15);
+      color: var(--text-color);
+      text-shadow: var(--text-shadow);
+    }
+    .copy {
+      font-size: calc(var(--index)* 0.7);
+    }
+  }
+}
